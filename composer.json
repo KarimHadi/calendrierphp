@@ -1,0 +1,16 @@
+{
+    "name": "karim/calendrierphp",
+    "authors": [
+        {
+            "name": "karim",
+            "email": "karimhadi77@gmail.com"
+        }
+    ],
+    "autoload":{
+        "psr-4": {
+            "Calendar\\": "C:/wamp64/www/calendrierphp/src/Date",
+            "App\\": "C:/wamp64/www/calendrierphp/src/App"
+        }
+    },
+    "require": {}
+}

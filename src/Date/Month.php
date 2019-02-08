@@ -1,6 +1,6 @@
 <?php
 
-namespace App\Date;
+namespace Calendar;
 
 
 
@@ -21,8 +21,8 @@ Class Month{
 {
     if ($month === null || $month < 1 || $month >12) {
         $month = intval(date('m'));
-
     }
+
     if ($year === null || $month < 1 || $month >12){
         $year = intval(date('Y'));
     }

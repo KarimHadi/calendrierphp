@@ -2,8 +2,8 @@
 
     <?php
     require 'C:\wamp64\www\calendrierphp\src\bootstrap.php';
-    require  'C:\wamp64\www\calendrierphp\src\Date\Events.php';
-        require 'C:\wamp64\www\calendrierphp\views\header.php';
+
+
 
     $pdo = get_pdo();
 
@@ -17,6 +17,8 @@
 } catch (\Exception $e) {
   e404();
 }
+
+render('header', ['title' => $event->getName()]);
     ?>
 <h1><?= h($event->getName()); ?></h1>
 
@@ -29,4 +31,4 @@
          <?= h($event->getDescription());  ?>
      </li>
 </ul>
-    <?php require 'C:\wamp64\www\calendrierphp\views\footer.php'; ?>
+    <?php require 'C:\wamp64\www\calendrierphp\liews\footer.php'; ?>

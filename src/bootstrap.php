@@ -1,5 +1,6 @@
 <?php
 
+require 'C:\wamp64\www\calendrierphp\vendor\autoload.php';
 
 function e404 (){
     require 'C:\wamp64\www\calendrierphp\idea\public\404.php';
@@ -33,4 +34,9 @@ function h(string $value) : string {
     return '';
     }
     return htmlentities($value);
+}
+
+function render(string $view, $parameters = []) {
+  extract($parameters);
+  include "C:/wamp64/www/calendrierphp/liews/{$view}.php";
 }
